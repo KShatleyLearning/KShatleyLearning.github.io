@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kristina Shatley, MSEd | Learning Designer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts: Inter & Playfair Display for a refined feminine touch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              roseMauve: "#C89F9C",
+              roseMauveLight: "#EBD8D5",
+              roseMauveDark: "#A67C79",
+              warmSand: "#F9F6F0",
+              charcoalText: "#2D3142",
+              mutedTaupe: "#8D807A",
+              softBlush: "#F3E9E7",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: #2d3142;
+        background-color: #f9f6f0;
+      }
+      h1,
+      h2,
+      h3,
+      .font-serif {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-warmSand text-charcoalText antialiased selection:bg-roseMauveLight selection:text-charcoalText"
+  >
+    <header
+      class="sticky top-0 z-50 bg-warmSand/90 backdrop-blur-md border-b border-roseMauveLight/50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          id="home"
+          class="font-serif text-2xl font-semibold tracking-wide text-charcoalText hover:text-roseMauveDark transition-colors"
+        >
+          Kristina Shatley
+        </a>
+        <nav
+          class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide"
+        >
+          <a href="#about" class="hover:text-roseMauveDark transition-colors"
+            >About Me</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-roseMauveDark transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="#expertise"
+            class="hover:text-roseMauveDark transition-colors"
+            >Expertise</a
+          >
+          <a
+            href="#contact"
+            class="px-5 py-2.5 rounded-full bg-roseMauve text-white hover:bg-roseMauveDark transition-all shadow-sm"
+            >Get in Touch</a
+          >
+        </nav>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-charcoalText focus:outline-none p-2"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-warmSand border-b border-roseMauveLight px-6 py-4 space-y-3"
+      >
+        <a
+          href="#about"
+          class="block text-sm font-medium hover:text-roseMauveDark"
+          >About Me</a
+        >
+        <a
+          href="#portfolio"
+          class="block text-sm font-medium hover:text-roseMauveDark"
+          >Portfolio</a
+        >
+        <a
+          href="#expertise"
+          class="block text-sm font-medium hover:text-roseMauveDark"
+          >Expertise</a
+        >
+        <a
+          href="#contact"
+          class="inline-block px-5 py-2 rounded-full bg-roseMauve text-white text-sm font-medium"
+          >Get in Touch</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="py-20 md:py-32 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12"
+      >
+        <div class="flex-1 space-y-6 text-center md:text-left">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-softBlush text-roseMauveDark text-xs font-semibold tracking-wider uppercase"
+          >
+            <i class="fa-solid fa-graduation-cap"></i> Learning Designer
+          </div>
+          <h1
+            class="text-4xl md:text-6xl font-normal leading-tight text-charcoalText"
+          >
+            Creating
+            <span class="italic font-serif text-roseMauveDark">meaningful</span>
+            learning experiences that promote change
+          </h1>
+          <p class="text-mutedTaupe text-lg max-w-xl leading-relaxed">
+            Hello! I'm Kristina. Welcome to my portfolio! I transform complex
+            concepts into engaging digital courses.
+          </p>
+          <div
+            class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="#portfolio"
+              class="px-8 py-3.5 rounded-full bg-roseMauve text-white font-medium hover:bg-roseMauveDark transition-all shadow-sm flex items-center gap-2"
+            >
+              View Portfolio <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a
+              href="#about"
+              class="px-8 py-3.5 rounded-full border border-roseMauveLight text-charcoalText font-medium hover:bg-softBlush transition-all"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 w-full max-w-md">
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-roseMauveLight/50 rounded-3xl transform rotate-3 filter blur-sm"
+            ></div>
+            <div
+              class="relative bg-white p-4 rounded-2xl shadow-md border border-roseMauveLight/30"
+            >
+              <img
+                src="03 images/Kristina.jpg"
+                alt="Kristina Shatley Profile Placeholder"
+                class="rounded-xl w-full h-[380px] object-cover"
+              />
+              <div class="mt-4 flex items-center justify-between px-2">
+                <div>
+                  <p class="font-serif font-medium text-lg">
+                    Kristina Shatley, M.Ed.
+                  </p>
+                  <p class="text-xs text-mutedTaupe">Instructional Designer</p>
+                </div>
+                <span
+                  class="inline-flex items-center gap-1.5 text-xs text-roseMauveDark font-medium bg-softBlush px-3 py-1 rounded-full"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-roseMauve animate-pulse"
+                  ></span>
+                  Open to Collaborate
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section with percentages about how awesome I am-->
+      <section
+         id="about" class="py-20 bg-white border-y border-roseMauveLight/30 px-6">
+    
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div class="relative order-2 md:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                src="https://placehold.co/400x500/F9F6F0/8D807A?text=Design+Process"
+                alt="Design Process Sketch"
+                class="rounded-xl shadow-sm w-full h-64 object-cover transform -translate-y-4"
+              />
+              <img
+                src="https://placehold.co/400x500/F3E9E7/A67C79?text=Workshop"
+                alt="Collaborative Workshop"
+                class="rounded-xl shadow-sm w-full h-64 object-cover transform translate-y-4"
+              />
+            </div>
+          </div>
+        </a>
+          <div class="space-y-6 order-1 md:order-2">
+            <h2 class="text-3xl md:text-4xl font-normal text-charcoalText">
+              Creatively blending educational design<span
+                class="italic font-serif text-roseMauveDark"
+                >??</span
+              >
+              adult learning theory, and technology.
+            </h2>
+            <p class="text-mutedTaupe leading-relaxed">
+              With over 10 years of experience in instructional design,
+              education, and curriculum creation, I specialize in building
+              solutions that are ???.
+            </p>
+            <p class="text-mutedTaupe leading-relaxed">
+              My philosophy centers on ?????
+            </p>
+            <div
+              class="grid grid-cols-2 gap-6 pt-4 border-t border-roseMauveLight/40"
+            >
+              <div>
+                <p class="font-serif text-3xl text-roseMauveDark font-semibold">
+                  35+?
+                </p>
+                <p
+                  class="text-xs text-mutedTaupe uppercase tracking-wider mt-1"
+                >
+                  Courses Launched
+                </p>
+              </div>
+              <div>
+                <p class="font-serif text-3xl text-roseMauveDark font-semibold">
+                  98%?
+                </p>
+                <p
+                  class="text-xs text-mutedTaupe uppercase tracking-wider mt-1"
+                >
+                  Learner Satisfaction
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section on portfolio showcase have on each page this first part is just text-->
+      <section id="portfolio" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <span
+            class="text-xs font-semibold tracking-wider text-roseMauveDark uppercase"
+            >Featured Work</span
+          >
+          <h2 class="text-3xl md:text-4xl font-normal">Portfolio Showcase</h2>
+          <p class="text-mutedTaupe">
+            Explore selected learning solutions, interactive modules, and job
+            aids.
+          </p>
+        </div>
+
+        <!-- Portfolio Grid this is the layout-->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 China-->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-roseMauveLight/30 flex flex-col group"
+          >
+            <div class="relative overflow-hidden aspect-video bg-softBlush">
+              <img
+                src="https://placehold.co/600x400/F3E9E7/A67C79?text=E-Learning+Module"
+                alt="E-Learning Module preview"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span
+                class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-medium px-3 py-1 rounded-full text-roseMauveDark"
+                >E-Learning</span
+              >
+            </div>
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <h3 class="font-serif text-xl font-medium text-charcoalText">
+                Introduction to Chinese Business Travel
+              </h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed flex-grow">
+                An interactive module built in Articulate Storyline designed to
+                prepare business people to travel to China for the first time.
+              </p>
+
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Articulate Storyline</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >UX Writing</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Job Aid</span
+                >
+              </div>
+              <div
+                class="pt-4 border-t border-roseMauveLight/20 flex items-center justify-between"
+              >
+                <span class="text-xs text-roseMauveDark font-medium"
+                  >Case Study Available</span
+                >
+                <a
+                  href="Piece1.html"
+                  class="w-8 h-8 rounded-full bg-softBlush flex items-center justify-center text-roseMauveDark hover:bg-roseMauve hover:text-white transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 Customer Service-->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-roseMauveLight/30 flex flex-col group"
+          >
+            <div class="relative overflow-hidden aspect-video bg-softBlush">
+              <img
+                src="https://placehold.co/600x400/EBD8D5/8D807A?text=Curriculum+Framework"
+                alt="Curriculum Framework preview"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span
+                class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-medium px-3 py-1 rounded-full text-roseMauveDark"
+                >??</span
+              >
+            </div>
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <h3 class="font-serif text-xl font-medium text-charcoalText">
+                5 Steps To Better Customer Calls
+              </h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed flex-grow">
+                This microlearning was created to assist new student apprentices
+                with making positive phone calls. ???
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >ADDIE Model</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Articulate Storyline</span
+                >
+              </div>
+              <div
+                class="pt-4 border-t border-roseMauveLight/20 flex items-center justify-between"
+              >
+                <span class="text-xs text-roseMauveDark font-medium"
+                  >Case Study Available</span
+                >
+                <a
+                  href="Piece2.html"
+                  class="w-8 h-8 rounded-full bg-softBlush flex items-center justify-center text-roseMauveDark hover:bg-roseMauve hover:text-white transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 Volunteering-->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-roseMauveLight/30 flex flex-col group"
+          >
+            <div class="relative overflow-hidden aspect-video bg-softBlush">
+              <img
+                src="https://placehold.co/600x400/F3E9E7/A67C79?text=Microlearning+Series"
+                alt="Microlearning Series preview"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <span
+                class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-medium px-3 py-1 rounded-full text-roseMauveDark"
+                >Microlearning</span
+              >
+            </div>
+            <div class="p-6 flex flex-col flex-grow space-y-4">
+              <h3 class="font-serif text-xl font-medium text-charcoalText">
+                Voluneteering
+              </h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed flex-grow">
+                A quick guide to introduce new volunteers to different volunteer
+                positions.
+              </p>
+              <p>
+                <a
+                  href="https://kshatleylearning.github.io/CustomerCalls/"
+                  target="blank"
+                  >Test this link</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/kristina-shatley-msed-958555253"
+                  >Linkedin link test</a
+                >
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Bite-sized</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Scenario Design</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Rise 360</span
+                >
+                <span
+                  class="text-[11px] bg-warmSand px-2.5 py-1 rounded-md text-mutedTaupe"
+                  >Job Aid</span
+                >
+              </div>
+              <div
+                class="pt-4 border-t border-roseMauveLight/20 flex items-center justify-between"
+              >
+                <span class="text-xs text-roseMauveDark font-medium"
+                  >Case Study Available</span
+                >
+                <a
+                  href="Piece3.html"
+                  class="w-8 h-8 rounded-full bg-softBlush flex items-center justify-center text-roseMauveDark hover:bg-roseMauve hover:text-white transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section on expertise what I bring-->
+      <section
+        id="expertise"
+        class="py-20 bg-white border-y border-roseMauveLight/30 px-6"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <span
+              class="text-xs font-semibold tracking-wider text-roseMauveDark uppercase"
+              >Core Competencies</span
+            >
+            <h2 class="text-3xl md:text-4xl font-normal">
+              What I Bring to the Table
+            </h2>
+            <p class="text-mutedTaupe">
+              A holistic toolkit combining educational research, creative
+              direction, and technical execution.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="p-8 rounded-2xl bg-warmSand border border-roseMauveLight/20 space-y-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-softBlush flex items-center justify-center text-roseMauveDark text-xl"
+              >
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3 class="font-serif text-xl font-medium">
+                Instructional Design
+              </h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed">
+                Expertise in ADDIE, SAM, Backward Design, and Bloom’s Taxonomy
+                to produce structured, goal-oriented learning objectives that
+                meet business needs.
+              </p>
+            </div>
+            <div
+              class="p-8 rounded-2xl bg-warmSand border border-roseMauveLight/20 space-y-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-softBlush flex items-center justify-center text-roseMauveDark text-xl"
+              >
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="font-serif text-xl font-medium">Authoring Tools</h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed">
+                Proficient in Articulate Storyline 360 and Rise.
+              </p>
+            </div>
+            <div
+              class="p-8 rounded-2xl bg-warmSand border border-roseMauveLight/20 space-y-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-softBlush flex items-center justify-center text-roseMauveDark text-xl"
+              >
+                <i class="fa-solid fa-users-viewfinder"></i>
+              </div>
+              <h3 class="font-serif text-xl font-medium">UX & Assessment</h3>
+              <p class="text-mutedTaupe text-sm leading-relaxed">
+                Needs Analysis, formative/summative evaluation strategy, ???
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="py-24 px-6 max-w-4xl mx-auto text-center space-y-8"
+      >
+        <div class="space-y-4 max-w-xl mx-auto">
+          <span
+            class="text-xs font-semibold tracking-wider text-roseMauveDark uppercase"
+            >Let's Collaborate</span
+          >
+          <h2 class="text-3xl md:text-5xl font-normal">
+            Ready to elevate your learning experience?
+          </h2>
+          <p class="text-mutedTaupe">
+            Whether you need an entire digital course built from scratch or an
+            audit of existing training programs, I'd love to connect.
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+        >
+          <a
+            href="mailto:Kristina.Shatley@gmail.com"
+            class="w-full sm:w-auto px-8 py-4 rounded-full bg-roseMauve text-white font-medium hover:bg-roseMauveDark transition-all shadow-sm flex items-center justify-center gap-2"
+          >
+            <i class="fa-regular fa-envelope"></i> Kristina.Shatley@gmail.com</a
+          >
+          <a
+            href="https://www.linkedin.com/in/kristina-shatley-msed-958555253"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-8 py-4 rounded-full border border-roseMauveLight text-charcoalText font-medium hover:bg-softBlush transition-all flex items-center justify-center gap-2"
+          >
+            <i class="fa-brands fa-linkedin-in text-roseMauveDark"></i> Connect
+            on LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t border-roseMauveLight/40 py-12 px-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-mutedTaupe"
+      >
+        <p>&copy; 2026 Kristina Shatley. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#about" class="hover:text-roseMauveDark transition-colors"
+            >About</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-roseMauveDark transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="#expertise"
+            class="hover:text-roseMauveDark transition-colors"
+            >Expertise</a
+          >
+          <a href="#contact" class="hover:text-roseMauveDark transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu on link click
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
