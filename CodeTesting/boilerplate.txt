@@ -34,3 +34,77 @@ img, picture, svg {
 max-width: 100%;
 display: block;
 }
+
+
+
+
+
+ <div id="footer-2" style="background-color: rgb(210, 235, 122);">
+  <h2> column 1</h2></div>
+<div class="footer" style="background-color: beige">
+  <h2> secont one</h2>
+</div>
+
+
+
+
+here's what dude had for 2 column layout
+.two-column-layout{
+  display:grid;
+  gap:60px;
+  grid-template-columns:1fr 1fr;
+}
+
+
+this is the footer thing I was trying to figure out
+footer{
+display:flex;
+background-color:rgb(160, 242, 170);
+color:var(--c-CharcoalText);
+height: 60px;
+padding: 0;
+flex-direction: column;
+}
+
+
+.footer-2{
+display:flex;
+color:var(--c-CharcoalText);
+height: 60px;
+padding: 0;
+flex-direction: column;
+
+}
+
+.footer-right{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    right: 50px;
+    color:var(--c-CharcoalText);
+}
+
+ .footer-right:hover{
+    color:var(--color-hover-text-taupe);
+ }
+
+ .column{
+    float:left;
+    width: 25%;
+ }
+ .row:after{
+    content:"">
+    display: table;
+    clear:both;
+ }
+
+
+
+ this is the footer I previously had
+    <div class="footer">
+      <span>Left side text span only</span>
+    </div>
+    <div class="footer-right">
+      <a>Right side text</a>
+      <a>another word</a>
+      <a> one more</a>
