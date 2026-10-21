@@ -396,7 +396,10 @@ color:var(--color-hover-text-taupe);
 } */
 
 .section-3{
-max-width: max-content;
+width: auto;
+height: 400px;
+overflow:hidden;
+/* max-width: max-content; */
 display: flex;
 flex-direction:row;
 padding: 20px;
@@ -412,6 +415,14 @@ gap:12px;
 flex: 1;
 gap: 6px;
 text-align: center;
-background-color: #a67c79;
-color:#F3E9E7;
+background-color: white;
+color:#2D3142;
+}
+
+.container-image{
+    width: 200px;
+    height: 200px;
+    background-color: #f96f53;
+    border: 3px dashed dodgerblue;
+    border-radius: 15px;
 }
