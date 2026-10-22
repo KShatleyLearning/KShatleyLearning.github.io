@@ -151,10 +151,12 @@
 
 *{
     margin:0;
+    text-decoration: none;
 }
 
 a{
     text-decoration: none;
+    color:#F3E9E7
 }
 
 img, picture, svg {
@@ -236,18 +238,46 @@ main{
     background-color: #F9F6F0;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
+.section-port{
+    background-color: #F9F6F0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1{
     font-family: 'Playfair';
     color:#2D3142;
     font-weight: 800;
     font-size: 36px;
+    padding: 15px;
 }
 
 h2{
     text-color:var(--c-CharcoalText);
     text-size:var(--fs-30);
     font-family: "Playfair";
+    padding: 15px;
 }
 
 h3{
@@ -256,6 +286,7 @@ h3{
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.05rem;
+    padding: 15px;
 }
 
 h4{
@@ -264,7 +295,7 @@ h4{
     font-weight: 600;
     font-size: 20px;
 } 
-}
+
 
 .emphasis{
     color:#a67c79;
@@ -465,13 +496,12 @@ background-color: lightblue;
 
 .div1{
     background-color: white;
-    width: 1200px;
-    text-align: center;
+
 }
 
-.div2{
+/* .div2{
     text-align: center;
-}
+} */
 
 .div3{
 display:grid;
@@ -495,4 +525,56 @@ gap:2rem;
     justify-content: center;
     color: var(--c-RoseMauveDark);
     font-size: 14px;
+}
+
+
+
+.contact-section{
+    background-color: #F9F6F0;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 56rem;
+    margin: auto;
+}
+
+
+.contact-div2{
+display:flex;
+text-align: center;
+
+}
+
+.contact-div2a{
+display: flex;
+justify-content: center;
+gap: 4px;
+
+}
+
+.contact-div2a1{
+    display:flex;
+    flex-direction: column;
+    background-color:#a67c79;
+    border: 1px solid black;
+    border-radius: 20px;
+    color:white;
+    height: 40px;
+    width: 640px;
+    align-content: center;
+}
+
+.contact-div2a2{
+    background-color: #ebd8d5;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width:640px;
+    align-content: center;
+}
+
+.mail-icon{
+    font-size: 16px;
 }
