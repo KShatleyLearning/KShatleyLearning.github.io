@@ -228,7 +228,8 @@ main{
 .section-1{
     background-color: white;
     padding: 20px 20px 20px 20px;
-    border:6px solid var(--c-RoseMauveLight)/30;
+    border:6px solid rgb(235 216 213 0.3);
+    width:1200px;
 }
 
 .section-2{
@@ -255,6 +256,14 @@ h3{
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.05rem;
+}
+
+h4{
+   font-family: 'Playfair';
+    color:#2D3142;
+    font-weight: 600;
+    font-size: 20px;
+} 
 }
 
 .emphasis{
@@ -457,6 +466,7 @@ background-color: lightblue;
 .div1{
     background-color: white;
     width: 1200px;
+    text-align: center;
 }
 
 .div2{
@@ -466,12 +476,15 @@ background-color: lightblue;
 .div3{
 display:grid;
 grid-template-columns: repeat(3, minmax(0, 1fr));
-gap:20px;
+gap:2rem;
 }
 
 .div3a{
     background-color: var(--c-WarmSand);
-    border: var(--c-RoseMauveLight)/20;
+    border: 1px solid rgb(235 216 213 / 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 0.875rem;
 }
 
 .div3a1{
