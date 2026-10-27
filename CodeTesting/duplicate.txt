@@ -678,3 +678,47 @@ gap: 4px;
 }
 
 .div3a1
+
+
+
+
+
+
+section class="hero">
+      <div>
+        
+          <h6>learning designer</h6>
+
+          <h1>Creating <span class="emphasis">meaningful</span> learing experiences that promote change
+          </h1>
+
+          <p> Hello!  I'm Kristina. Welcome to my portfolio. I transform complex concepts into engaging digital courses.  Feel free to explore my work and reach out if you'd like to collaborate on your next learning project.
+           </p></div>
+            
+          <div class="hero__button--holder">
+              <span> <a class="contact__pill--left" href="">View portfolio
+              <i class="solid-arrow">
+               </i>
+               </a><a class="contact__pill--right">Learn More></a></span>    
+          </div>
+      </div>
+        
+      
+        <div class="profile__box--main">secondary box maybe on the right
+          <div>this is the border around the photo<img>insert image in the border box></img></div>
+        
+      <div>
+              <h4>Kristina Shatley, M.S.Ed.</h4>
+                <p style="font-size: 12px;">Instructional Designer</p>
+                  
+                  
+                 
+
+                
+              
+            
+            <span class="pill-container">E-learning</span>
+
+            <span class="pill-container">Job Aids</span>
+            <span class="pill-container">Scenario Learning</span>
+    </div>
