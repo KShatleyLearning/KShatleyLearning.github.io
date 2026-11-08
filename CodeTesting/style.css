@@ -457,6 +457,9 @@ background-color: #a67c79;
     gap: 0.5rem;
     text-align: center;
 }
+.hero__button--left:hover{
+    background-color:var(--c-RoseMauveDark);
+}
 
 .hero__button--right{
     background-color: var(--c-WarmSand);
@@ -470,6 +473,9 @@ background-color: #a67c79;
     padding: 1rem;
     gap: 0.5rem;
     text-align: center;
+}
+.hero__button--right:hover{
+  background-color:var(--c-SoftBlush);  
 }
 
 .relative__position--photo{
@@ -498,7 +504,6 @@ background-color: #a67c79;
     border-radius: 1.5rem; 
     inset: -0.5rem;
 }
-
 
 
 .hero__image{
@@ -531,6 +536,8 @@ background-color: #a67c79;
     gap: 0.375rem;
     align-items: center;
     display:inline-flex;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
 }
 /*About Me Section*/
 
@@ -840,3 +847,14 @@ color:var(--color-hover-text-taupe);
     border: 1px solid black;
     background: 
 } */
+
+
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
