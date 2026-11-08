@@ -525,8 +525,9 @@ background-color: #a67c79;
     justify-content: space-between;
     padding-bottom:1rem;
     line-height: 1.5rem;
+}
 
-}      
+   
 .hero__white--card span{
     background-color: var(--c-SoftBlush);
     border-radius: 9999px;
